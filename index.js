@@ -1,7 +1,7 @@
 var express = require('express')
 var app = express()
 
-app.get('/echo/:text', function (req, res) {
+app.get('/:text', function (req, res) {
     res.send(req.params.text.toUpperCase());  
 })
 
